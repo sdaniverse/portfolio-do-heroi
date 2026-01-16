@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Portfólio do Herói - Danielle Pinheiro</title>
+</head>
+
+<body>
+    <header>
+        <div class="left-side">
+            <h1>Danielle Pinheiro</h1>
+            <p>Desenvolvedor em Treinamento</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#painel-heroi">Painel do Herói</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <div class="sobre-texto">
+                <h2>Sobre Mim</h2>
+                <p>Olá! Meu nome é Danielle. <br> Estou começando minha jornada no desenvolvimento web.</p>
+            </div>
+
+            <img src="avatar.png" alt="Avatar do herói">
+        </section>
+
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+
+            <table border="1">
+                <tr>
+                    <th>Projeto</th>
+                    <th>Descrição</th>
+                    <th>Link</th>
+                </tr>
+                <tr class="card-projeto">
+                    <td>Páginda de Receitas</td>
+                    <td>Página criada no curso The Odin Project</td>
+                    <td><a href="sdaniverse.github.io/odin-recipes">Ver</a></td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contato">
+            <div id="socials">
+                <h2>Contato</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com/sdanipinheiro/" target="_blank"
+                            rel="noopener noreferrer"><img src="instagram-brands-solid.svg"
+                                alt="Ícone do Instagram"></a></li>
+                    <li><a href="https://github.com/sdaniverse" target="_blank" rel="noopener noreferrer"><img
+                                src="github-brands-solid.svg" alt="Ícone do GitHub"></a></li>
+                </ul>
+            </div>
+
+            <form action="#" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="30"></textarea>
+                <br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="painel-heroi">
+            <div class="perfil">
+                <h2>Painel do Herói</h2>
+                <img src="avatar-perfil.png" alt="Avatar do herói">
+            </div>
+
+            <div class="painel-info">
+                <ul>
+                    <li><span class="info">Nome:</span> <span id="hero-nome">Danielle Pinheiro</span></li>
+                    <li><span class="info">Classe:</span> <span id="hero-classe">Aspirante a Dev</span></li>
+                </ul>
+
+                <ul>
+                    <li><span class="info">Nível:</span> <span id="hero-nivel">1</span></li>
+                    <li><span class="info">XP:</span> <span id="hero-xp">1000</span></li>
+                </ul>
+
+                <div class="botoes-container">
+                    <button id="btn-xp">Iniciar uma batalha</button>
+                    <button id="btn-oraculo">Consultar Oráculo</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Danielle Pinheiro. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
